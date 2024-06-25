@@ -130,14 +130,14 @@
 
 /obj/item/reagent_containers/food/condiment/sugar
 	name = "sugar sack"
-	desc = "A bag of sugar. Used for sweetening, typically."
+	desc = "Tasty spacey sugar!"
 	icon_state = "sugar"
 	item_state = "flour"
 	list_reagents = list(/datum/reagent/consumable/sugar = 50)
 
 /obj/item/reagent_containers/food/condiment/saltshaker		//Separate from above since it's a small shaker rather then
 	name = "salt shaker"											//	a large one.
-	desc = "A shaker full of salt. Make sure the cap is on tight!"
+	desc = "Salt. From space oceans, presumably."
 	icon_state = "saltshakersmall"
 	icon_empty = "emptyshaker"
 	possible_transfer_amounts = list(1,20) //for clown turning the lid off
@@ -160,7 +160,7 @@
 
 /obj/item/reagent_containers/food/condiment/peppermill
 	name = "pepper mill"
-	desc = "A handheld mill to grind down peppercorn. Often used to flavor food... or make people sneeze."
+	desc = "Often used to flavor food or make people sneeze."
 	icon_state = "peppermillsmall"
 	icon_empty = "emptyshaker"
 	possible_transfer_amounts = list(1,20) //for clown turning the lid off
@@ -170,7 +170,7 @@
 
 /obj/item/reagent_containers/food/condiment/milk
 	name = "space milk"
-	desc = "A carton full of milk. Freshly supplied from a mammal, a biogenerator, or chemically reproduced in a lab."
+	desc = "It's milk. White and nutritious goodness!"
 	icon_state = "milk"
 	item_state = "carton"
 	lefthand_file = 'icons/mob/inhands/equipment/kitchen_lefthand.dmi'
@@ -186,7 +186,7 @@
 
 /obj/item/reagent_containers/food/condiment/soymilk
 	name = "soy milk"
-	desc = "A carton full of soy milk. Freshly supplied from the soybean."
+	desc = "It's soy milk. White and nutritious goodness!"
 	icon_state = "soymilk"
 	item_state = "carton"
 	lefthand_file = 'icons/mob/inhands/equipment/kitchen_lefthand.dmi'
@@ -195,20 +195,20 @@
 
 /obj/item/reagent_containers/food/condiment/rice
 	name = "rice sack"
-	desc = "A bag of dry, bleached rice. Better when properly cooked."
+	desc = "A big bag of rice. Good for cooking!"
 	icon_state = "rice"
 	item_state = "flour"
 	list_reagents = list(/datum/reagent/consumable/rice = 30)
 
 /obj/item/reagent_containers/food/condiment/soysauce
 	name = "soy sauce"
-	desc = "A glass bottle of soy sauce. Known for being salty and savory."
+	desc = "A salty soy-based flavoring."
 	icon_state = "soysauce"
 	list_reagents = list(/datum/reagent/consumable/soysauce = 50)
 
 /obj/item/reagent_containers/food/condiment/mayonnaise
 	name = "mayonnaise"
-	desc = "An oily condiment made from egg yolk."
+	desc = "An oily condiment made from egg yolks."
 	icon_state = "mayonnaise"
 	list_reagents = list(/datum/reagent/consumable/mayonnaise = 50)
 
@@ -222,16 +222,16 @@
 	amount_per_transfer_from_this = 10
 	possible_transfer_amounts = list()
 	possible_states = list(
-		/datum/reagent/consumable/ketchup = list("condi_ketchup", "Ketchup", "A packet of ketchup. The old standby, given by the fistful."),
-		/datum/reagent/consumable/capsaicin = list("condi_hotsauce", "Hotsauce", "A packet of hotsauce. Good for spicing up food."),
-		/datum/reagent/consumable/soysauce = list("condi_soysauce", "Soy Sauce", "A packet of soy sauce. Good on rice."),
-		/datum/reagent/consumable/frostoil = list("condi_frostoil", "Coldsauce", "A packet of coldsauce. Good for... cooling down food?"),
-		/datum/reagent/consumable/sodiumchloride = list("condi_salt", "Salt Shaker", "A shaker full of salt. Make sure the cap is on tight!"),
-		/datum/reagent/consumable/blackpepper = list("condi_pepper", "Pepper Mill", "A handheld mill to grind down peppercorn. Often used to flavor food... or make people sneeze."),
-		/datum/reagent/consumable/cornoil = list("condi_cornoil", "Corn Oil", "A (presumably) corn-sourced oil. Good for cooking."),
-		/datum/reagent/consumable/sugar = list("condi_sugar", "Sugar", "A packet of sugar. Used for sweetening, typically."),
-		/datum/reagent/consumable/astrotame = list("condi_astrotame", "Astrotame", "An artificial sweetener. Just be careful to not give yourself a headache with too much!"),
-		/datum/reagent/consumable/bbqsauce = list("condi_bbq", "BBQ sauce", "A sweet and savory packet of barbeque sauce. It's sticky!"),
+		/datum/reagent/consumable/ketchup = list("condi_ketchup", "Ketchup", "You feel more American already."),
+		/datum/reagent/consumable/capsaicin = list("condi_hotsauce", "Hotsauce", "You can almost TASTE the stomach ulcers now!"),
+		/datum/reagent/consumable/soysauce = list("condi_soysauce", "Soy Sauce", "A salty soy-based flavoring"),
+		/datum/reagent/consumable/frostoil = list("condi_frostoil", "Coldsauce", "Leaves the tongue numb in it's passage"),
+		/datum/reagent/consumable/sodiumchloride = list("condi_salt", "Salt Shaker", "Salt. From space oceans, presumably"),
+		/datum/reagent/consumable/blackpepper = list("condi_pepper", "Pepper Mill", "Often used to flavor food or make people sneeze"),
+		/datum/reagent/consumable/cornoil = list("condi_cornoil", "Corn Oil", "A delicious oil used in cooking. Made from corn"),
+		/datum/reagent/consumable/sugar = list("condi_sugar", "Sugar", "Tasty spacey sugar!"),
+		/datum/reagent/consumable/astrotame = list("condi_astrotame", "Astrotame", "The sweetness of a thousand sugars but none of the calories."),
+		/datum/reagent/consumable/bbqsauce = list("condi_bbq", "BBQ sauce", "Hand wipes not included."),
 		)
 
 /obj/item/reagent_containers/food/condiment/pack/update_icon()
@@ -295,30 +295,30 @@
 
 /obj/item/reagent_containers/food/condiment/ketchup
 	name = "ketchup bottle"
-	desc = "The old standby condiment."
+	desc = "You feel more american already"
 	icon_state = "ketchup"
 	list_reagents = list(/datum/reagent/consumable/ketchup = 50)
 
 /obj/item/reagent_containers/food/condiment/bbqsauce
 	name = "bbq sauce bottle"
-	desc = "A sweet and savory barbeque sauce. It's sticky!"
+	desc = "Hand wipes not included"
 	icon_state = "bbqsauce"
 	list_reagents = list(/datum/reagent/consumable/bbqsauce = 50)
 
 /obj/item/reagent_containers/food/condiment/hotsauce
 	name = "hot sauce bottle"
-	desc = "Good for spicing up food!"
+	desc = "You can almost TASTE the stomach ulcers now!"
 	icon_state = "hotsauce"
 	list_reagents = list(/datum/reagent/consumable/capsaicin = 50)
 
 /obj/item/reagent_containers/food/condiment/coldsauce
 	name = "cold sauce bottle"
-	desc = "Good for... cooling down food?"
+	desc = "Leaves the tounge numb in it's passage"
 	icon_state = "coldsauce"
 	list_reagents = list(/datum/reagent/consumable/frostoil = 50)
 
 /obj/item/reagent_containers/food/condiment/oliveoil
 	name = "olive oil bottle"
-	desc = "Oil made from pressed olives. Great for cooking."
+	desc = "A delicious oil used in cooking"
 	icon_state = "oliveoil"
 	list_reagents = list(/datum/reagent/consumable/cornoil = 50)
