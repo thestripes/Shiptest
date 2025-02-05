@@ -630,7 +630,7 @@
 
 /obj/item/reagent_containers/food/snacks/ration/snack/chocolate_orange_snack_cake
 	name = "chocolate orange snack cake"
-	desc = "A small chocolate snack cake square of and orange flavoring."
+	desc = "A small chocolate snack cake square of orange flavoring."
 	filling_color = "#ff6600"
 	tastes = list("chocolate" = 1, "orange" = 1, "cake" = 1)
 	foodtype = SUGAR
